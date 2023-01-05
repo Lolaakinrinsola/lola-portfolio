@@ -5,16 +5,16 @@ import logo from './Images/dplogo.png'
 
 export const Header = () => {
   return (
-    <Flex px='150' pt='30' align='center' h='60vh' gap='100'>
-        <Box>
-            <Heading display='flex' size='3xl'>Hi <MdWavingHand color='blue'/>, I'm Ololade </Heading>
-            <Text pt='10' size='3xl'>I am a front end developer from Lagos, Nigeria that loves to builds things on the internet.
+    <Flex px='150' pt='30' align='center' h='70vh' gap='100'>
+        <Box w='100'>
+            <Heading display='flex' size='4xl'>Hi <MdWavingHand color='blue'/>, I'm Ololade </Heading>
+            <Text pt='10' fontSize='2xl' >I am a front end developer from Lagos, Nigeria that loves to builds things on the internet.
                 I have experience in building complex websites using modern technologies like React, Javascript and CSS.
                 Let's have a <Link color='blue' href='mailto: ololadeakinrinsola@gmail.com'>chat</Link> !
             </Text>
         </Box>
         <Spacer/>
-        <Image src={logo}  boxSize='380px' h='500px' mt='40'/>
+        <Image src={logo}  boxSize='380px' h='300px' />
     </Flex>
   )
 }
