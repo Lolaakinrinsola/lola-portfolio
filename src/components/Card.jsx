@@ -9,11 +9,11 @@ export const Card = (props) => {
      bg='blue'
      borderRadius='20'
      >
-        <Image w='100'/>
+        <Image src={props.image} w='100'/>
         <Box gap='50'>
             <Heading>Project</Heading>
             <Link>Visit the website</Link>
-            <Box display='flex'>
+            <Box display='flex' gap='30'>
                 <Link><AiFillGithub/></Link>
                 <Link> <AiOutlineLink/></Link>
             </Box>
