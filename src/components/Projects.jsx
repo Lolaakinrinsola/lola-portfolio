@@ -7,16 +7,22 @@ const Project=styled.div`
     display:grid;
     justify-content:center;
     width:100vw;
-    border:solid;
     gap:3em;
-    padding:100px 0
+    padding:100px 0;
 `
 export const Projects = () => {
   return (
-    <Project display='grid' m='auto'  w='100vw' border='solid'>
-        <Heading>Here are some of my works</Heading>
-        <Card/>
-        <Card/>        
+    <Project>
+        <Heading textAlign='center' size='2xl'>Here are some of my works</Heading>
+        <Box display='flex' w='100vw' flexWrap='wrap' gap='3em' px='150px' justifyContent='center'>
+          <Card/>
+          <Card/>        
+          <Card/>        
+          <Card/>        
+          <Card/>        
+          <Card/>        
+
+        </Box>
     </Project>
   )
 }
