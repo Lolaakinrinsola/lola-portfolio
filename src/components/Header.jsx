@@ -8,7 +8,7 @@ export const Header = () => {
   return (
       <Box px={{base:'40px', md:'150px'}} pt={{base:'30px', md:'50px'}} align='center' gap='100' >
           <Box h='100vh' w={{base:'fit-content', md:'100vw - 150px'}} display='grid' alignContent='center'gap='20'>
-            <Heading fontSize={{base:'3em', md:'4em', lg:'6em'}} textAlign='left'>Creating <Text as='span' color='#ff0000'>beautiful</Text> and <Text as='span' color='#ff0000'>functional</Text> websites and applications, one pixel at a time</Heading>
+            <Heading fontSize={{base:'3em', md:'4em', lg:'5em'}} textAlign='left'>Creating <Text as='span' color='#ff0000'>beautiful</Text> and <Text as='span' color='#ff0000'>functional</Text> websites and applications, one pixel at a time</Heading>
             <Flex gap={{base:'5',md:'10'}}  flexWrap='wrap'>
               <Button w={{base:'100%', md:'fit-content'}} bg='#ff0000' color='white'size='lg' colorScheme='orange'>Contact me</Button>
               <Link href={resume} target="_blank" 
