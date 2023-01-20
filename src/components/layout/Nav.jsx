@@ -58,7 +58,7 @@ export const Nav = () => {
               </DrawerBody>
             </DrawerContent>
           </Drawer>
-          <HStack spacing={{md:'20px', lg:'70px'}} display={{base:'none', md:'flex'}}>
+          <HStack spacing={{md:'20px', lg:'70px'}} display={{base:'none', lg:'flex'}}>
               <Link borderBottom='2px' borderColor='#ff0000'><Text fontSize='2xl'>Projects</Text></Link>
               <Link><Text fontSize='2xl'>Contact</Text></Link>
               <Link><Text fontSize='2xl'>Resume</Text></Link>
