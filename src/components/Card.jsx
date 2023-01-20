@@ -6,7 +6,7 @@ export const Card = (props) => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Box width={{base:'80%', md:'30%'}} display={{md:'flex', base:'grid'}}
+    <Box width={{base:'fit-content', md:'30%'}} display={{md:'flex', base:'grid'}}
      p={{base:'10', md:'150'}} 
      bg={colorMode==='light'?'rgb(255, 255, 255)':'rgb(26, 32, 44)'} 
      borderRadius='20'

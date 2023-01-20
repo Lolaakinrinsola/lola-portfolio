@@ -32,13 +32,13 @@ export const Nav = () => {
       alignItems='center'
       justifyContent='space-between'
       bg={colorMode==='light'?'rgb(255, 255, 255, 0.7)':'rgb(26, 32, 44, 0.7)'} 
-      gap={{base:'120px', md:'400px'}}
+      gap={{base:'120px', md:'200px', lg:'400px'}}
       >
           <Box>
               <Heading>LAD<Text as='span' color='#ff0000'>E</Text></Heading>
           </Box>
           <Spacer />
-          <HamburgerIcon onClick={onOpen} ref={btnRef} boxSize={7} />
+          <HamburgerIcon onClick={onOpen} ref={btnRef} boxSize={7} display={{md:'none'}} />
           <Drawer
           isOpen={isOpen}
           placement='right'
