@@ -26,7 +26,7 @@ export const Nav = () => {
   return (
     <div>
       <Box display='flex' 
-      pt={{base:'20', md:'60'}} 
+      pt={{base:'20', md:'70px'}} 
       px={{base:'30px' , md:'150'}} 
       position='fixed' 
       alignItems='center'
