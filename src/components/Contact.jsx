@@ -5,9 +5,9 @@ import {AiFillPhone, AiFillTwitterCircle, AiFillGithub} from 'react-icons/ai';
 
 export const Contact = () => {
   return (
-    <Box h='100vh' alignContent='center' display='grid' justifyItems='center' gap='30'>
+    <Box h='100vh' px={{base:'30px', md:'0' }} alignContent='center' w={{base:'fit-content', md:''}} display='grid' justifyItems='center' justifyContent='center' gap='30' m='auto' >
         <Heading align='center' size='3xl'>Contact me</Heading>
-        <Text fontSize='20px'>You can reach out to me on <Link color='#ff0000'>email</Link> and let's collaborate together</Text>
+        <Text fontSize='20px' align='center' >You can reach out to me on <Link color='#ff0000'>email</Link> and let's collaborate together</Text>
         <Flex gap='30px'>
             <Link><MdOutlineEmail size={'30'}/></Link>
             <Link><AiFillPhone size={'30'} /></Link>
