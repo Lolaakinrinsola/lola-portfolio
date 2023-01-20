@@ -26,7 +26,7 @@ export const Nav = () => {
   return (
     <div>
       <Box display='flex' 
-      pt={{base:'20', md:'70'}} 
+      pt={{base:'20', md:'60'}} 
       px={{base:'30px' , md:'150'}} 
       position='fixed' 
       alignItems='center'
@@ -60,7 +60,7 @@ export const Nav = () => {
           </Drawer>
           <HStack spacing={{md:'20px', lg:'70px'}} display={{base:'none', md:'flex'}}>
               <Link borderBottom='2px' borderColor='#ff0000'><Text fontSize='2xl'>Projects</Text></Link>
-              <Link><Text fontSize='2xl'>Hire me</Text></Link>
+              <Link><Text fontSize='2xl'>Contact</Text></Link>
               <Link><Text fontSize='2xl'>Resume</Text></Link>
               <Link onClick={changingTheme}>
               {theme()}
