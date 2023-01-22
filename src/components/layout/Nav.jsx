@@ -7,7 +7,8 @@ import { Box, Flex, Text,Spacer, HStack,Link,Heading, VStack,useColorMode, Drawe
   DrawerCloseButton} from "@chakra-ui/react";
 import { SunIcon ,MoonIcon,HamburgerIcon} from '@chakra-ui/icons';
 import { useState } from "react";
-import {AiFillPhone, AiFillTwitterCircle, AiFillGithub} from 'react-icons/ai';
+import {AiFillPhone, AiFillTwitterCircle, AiFillGithub,AiFillLinkedin} from 'react-icons/ai';
+import '../../styles/nav.css';
 
 export const Nav = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -26,19 +27,18 @@ export const Nav = () => {
   return (
     <div>
       <Box display='flex' 
-      pt={{base:'20', md:'70px'}} 
+      pt={{base:'20px', md:'70px'}} 
       px={{base:'30px' , md:'150'}} 
       position='fixed' 
       alignItems='center'
       justifyContent='space-between'
       bg={colorMode==='light'?'rgb(255, 255, 255, 0.7)':'rgb(26, 32, 44, 0.7)'} 
-      gap={{base:'120px', md:'200px', lg:'300px'}}
+      className='navigation'
       >
           <Box>
               <Heading>LAD<Text as='span' color='#ff0000'>E</Text></Heading>
           </Box>
-          <Spacer />
-          <HamburgerIcon onClick={onOpen} ref={btnRef} boxSize={7} display={{md:'none'}} />
+          <HamburgerIcon onClick={onOpen} ref={btnRef} boxSize={7} display={{lg:'none'}} />
           <Drawer
           isOpen={isOpen}
           placement='right'
@@ -69,9 +69,9 @@ export const Nav = () => {
       </Box>
 
       <VStack position='fixed' pt='60vh' pl='3vw' gap='5' display={{base:'none', md:'block'}} >
-        <Link><AiFillPhone size={ '40'}/></Link>
-        <Link><AiFillTwitterCircle size={'40'}/></Link>
-        <Link><AiFillGithub size={'40'}/></Link>
+        <Link className='socialLinks' href='https://www.linkedin.com/in/ololade-akinrinsola/' ><AiFillLinkedin size={ '40'} /></Link>
+        <Link className='socialLinks' ><AiFillTwitterCircle size={'40'}/></Link>
+        <Link className='socialLinks' href='https://github.com/lolaakinrinsola' ><AiFillGithub size={'40'}/></Link>
       </VStack>
     </div>
   )
