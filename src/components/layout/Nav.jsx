@@ -7,7 +7,7 @@ import { Box, Flex, Text,Spacer, HStack,Link,Heading, VStack,useColorMode, Drawe
   DrawerCloseButton} from "@chakra-ui/react";
 import { SunIcon ,MoonIcon,HamburgerIcon} from '@chakra-ui/icons';
 import { useState } from "react";
-import {AiFillPhone, AiFillTwitterCircle, AiFillGithub,AiFillLinkedin} from 'react-icons/ai';
+import {AiOutlineMail, AiFillTwitterCircle, AiFillGithub,AiFillLinkedin} from 'react-icons/ai';
 import '../../styles/nav.css';
 
 export const Nav = () => {
@@ -60,7 +60,7 @@ export const Nav = () => {
           </Drawer>
           <HStack spacing={{md:'20px', lg:'70px'}} display={{base:'none', lg:'flex'}}>
               <Link borderBottom='2px' borderColor='#ff0000'><Text fontSize='2xl'>Projects</Text></Link>
-              <Link><Text fontSize='2xl'>Contact</Text></Link>
+              <Link href='mailto: ololadeakinrinsola@gmail.com'><Text fontSize='2xl'>Contact</Text></Link>
               <Link><Text fontSize='2xl'>Resume</Text></Link>
               <Link onClick={changingTheme}>
               {theme()}
@@ -69,9 +69,9 @@ export const Nav = () => {
       </Box>
 
       <VStack position='fixed' pt='60vh' pl='3vw' gap='5' display={{base:'none', md:'block'}} >
-        <Link className='socialLinks' href='https://www.linkedin.com/in/ololade-akinrinsola/' ><AiFillLinkedin size={ '40'} /></Link>
-        <Link className='socialLinks' ><AiFillTwitterCircle size={'40'}/></Link>
-        <Link className='socialLinks' href='https://github.com/lolaakinrinsola' ><AiFillGithub size={'40'}/></Link>
+        <Link className='socialLinks' target="_blank" href='https://www.linkedin.com/in/ololade-akinrinsola/' ><AiFillLinkedin size={ '40'} /></Link>
+        <Link className='socialLinks' target="_blank" href='mailto: ololadeakinrinsola@gmail.com'><AiOutlineMail size={'40'}/></Link>
+        <Link className='socialLinks' target="_blank" href='https://github.com/lolaakinrinsola' ><AiFillGithub size={'40'}/></Link>
       </VStack>
     </div>
   )
