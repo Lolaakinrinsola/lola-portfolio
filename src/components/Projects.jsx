@@ -12,7 +12,7 @@ const Project=styled.div`
 `
 export const Projects = () => {
   return (
-    <Project>
+    <Project id='project' >
         <Heading textAlign='center' size='2xl'>Here are some of my works</Heading>
         <Box display='flex' w='100vw' flexWrap='wrap' gap='3em' px='150px' justifyContent='center'>
           <Card/>

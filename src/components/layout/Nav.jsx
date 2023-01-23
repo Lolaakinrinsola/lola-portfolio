@@ -50,7 +50,7 @@ export const Nav = () => {
               <DrawerCloseButton />
               <DrawerBody py={{base:'70px', md:'100px'}} gap='20px' >
                 <Link borderBottom='2px' borderColor='#ff0000'><Text fontSize='2xl'>Projects</Text></Link>
-                <Link ><Text fontSize='2xl'>Contact</Text></Link>
+                <Link href='#contact' ><Text fontSize='2xl'>Contact</Text></Link>
                 <Link><Text fontSize='2xl'>Resume</Text></Link>
                 <Link onClick={changingTheme}>
                   <Text fontSize='2xl'>Toggle to {colorMode==='light'?"dark":'light'} mode</Text>
@@ -59,8 +59,8 @@ export const Nav = () => {
             </DrawerContent>
           </Drawer>
           <HStack spacing={{md:'20px', lg:'70px'}} display={{base:'none', lg:'flex'}}>
-              <Link borderBottom='2px' borderColor='#ff0000'><Text fontSize='2xl'>Projects</Text></Link>
-              <Link href='mailto: ololadeakinrinsola@gmail.com'><Text fontSize='2xl'>Contact</Text></Link>
+              <Link href='#project' borderBottom='2px' borderColor='#ff0000'><Text fontSize='2xl'>Projects</Text></Link>
+              <Link href='#contact'><Text fontSize='2xl'>Contact</Text></Link>
               <Link><Text fontSize='2xl'>Resume</Text></Link>
               <Link onClick={changingTheme}>
               {theme()}
