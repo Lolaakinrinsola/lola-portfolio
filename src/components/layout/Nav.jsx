@@ -49,7 +49,7 @@ export const Nav = () => {
             <DrawerContent>
               <DrawerCloseButton />
               <DrawerBody py={{base:'70px', md:'100px'}} gap='20px' >
-                <Link borderBottom='2px' borderColor='#ff0000'><Text fontSize='2xl'>Projects</Text></Link>
+                <Link borderBottom='2px' borderColor='#ff0000'href='#project' ><Text fontSize='2xl'>Projects</Text></Link>
                 <Link href='#contact' ><Text fontSize='2xl'>Contact</Text></Link>
                 <Link><Text fontSize='2xl'>Resume</Text></Link>
                 <Link onClick={changingTheme}>

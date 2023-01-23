@@ -8,9 +8,9 @@ import '../styles/header.css';
 export const Header = () => {
   return (
       <Box px={{base:'40px', md:'150px'}}  pt={{base:'30px', md:'70px'}} align='center' gap='100' >
-          <Box justifyContent='center' className='header' h={{base:'calc(100vh + 30px)', md:'calc(100vh + 30px)'}} w={{base:'fit-content', md:'100vw - 150px'}} display='grid' alignContent='center'>
+          <Box justifyContent='center' className='header' h={{base:'calc(100vh + 30px)', lg:'calc(100vh + 70px)'}} w={{base:'fit-content', md:'100vw - 150px'}} display='grid' alignContent='center'>
             <Text align='left' fontFamily='Allura' fontSize={{base:'1em',md:'2em'}} mb='0' > &lt;front end developer /&gt; </Text>
-            <Heading mt='0' fontSize={{base:'3em', md:'4em', lg:'6em'}} w={{lg:'95%'}} textAlign='left'>Creating <Text as='span' color='#ff0000'>beautiful</Text> and <Text as='span' color='#ff0000'>functional</Text> websites and applications, one pixel at a time</Heading>
+            <Heading mt='0' fontSize={{base:'3em', md:'4em', lg:'5em'}} textAlign='left'>Creating <Text as='span' color='#ff0000'>beautiful</Text> and <Text as='span' color='#ff0000'>functional</Text> websites and applications, one pixel at a time</Heading>
             <Flex gap={{base:'5',md:'10'}}  flexWrap='wrap' mt='15px' >
               <Button w={{base:'100%', md:'fit-content'}} bg='#ff0000' color='white'size='lg' colorScheme='orange'>Contact me</Button>
               <Link href={resume} target="_blank" 
