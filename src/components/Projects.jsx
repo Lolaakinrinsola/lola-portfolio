@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from './Card'
-import { Box, Center, Image, Flex,Container, Text,Spacer, HStack,Heading, Link} from "@chakra-ui/react";
+import { Box,Heading} from "@chakra-ui/react";
 import styled from 'styled-components';
 
 const Project=styled.div`
@@ -11,17 +11,24 @@ const Project=styled.div`
     padding:100px 0;
 `
 export const Projects = () => {
+  const projectsDetails=[
+    {title:'Little Lemon', githublink:'#', websiteLink:'#'},
+    {title:'Fylo', githublink:'#', websiteLink:'#'},
+    {title:'Zuri FIRST', githublink:'#', websiteLink:'#'},
+    {title:'Metaverse', githublink:'https://github.com/Lolaakinrinsola/metabnb', websiteLink:'#'},
+    {title:'portfolio', githublink:'#', websiteLink:'#'}
+  ]
   return (
     <Project id='project' >
         <Heading textAlign='center' size='2xl'>Here are some of my works</Heading>
         <Box display='flex' w='100vw' flexWrap='wrap' gap='3em' px='150px' justifyContent='center'>
-          <Card/>
-          <Card/>        
-          <Card/>        
-          <Card/>        
-          <Card/>        
-          <Card/>        
-
+          {projectsDetails.map((websites)=>(
+            <Card 
+            project={websites.title} 
+            github={websites.githublink}
+            website={websites.websiteLink}
+            />
+          ))}
         </Box>
     </Project>
   )
