@@ -8,6 +8,7 @@ import colorTheme from './styles/colorTheme'
 import { Projects } from "./components/Projects";
 import { Resume } from "./components/Resume";
 import { Contact } from "./components/Contact";
+import Footer from "./components/layout/Footer";
 function App() {
   return (
     <ChakraProvider>
@@ -15,6 +16,7 @@ function App() {
       <Header/>
       <Projects/>
       <Contact/>
+      <Footer/>
     </ChakraProvider>
   );
 }

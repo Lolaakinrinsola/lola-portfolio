@@ -2,6 +2,7 @@ import React from 'react'
 import { Card } from './Card'
 import { Box,Heading} from "@chakra-ui/react";
 import styled from 'styled-components';
+import meta from './Images/metabnb.png'
 
 const Project=styled.div`
     display:grid;
@@ -12,11 +13,13 @@ const Project=styled.div`
 `
 export const Projects = () => {
   const projectsDetails=[
-    {title:'Little Lemon', githublink:'#', websiteLink:'#'},
-    {title:'Fylo', githublink:'#', websiteLink:'#'},
-    {title:'Zuri FIRST', githublink:'#', websiteLink:'#'},
-    {title:'Metaverse', githublink:'https://github.com/Lolaakinrinsola/metabnb', websiteLink:'#'},
-    {title:'portfolio', githublink:'#', websiteLink:'#'}
+
+    {title:'Tech1M Juniors', githublink:'https://github.com/Temyturpe/Tech1m-group3-project', websiteLink:'https://tech1m-group3-project.vercel.app/', about:'Tech1M Juniors is a web application designed for children to learn various tech skills.', tech:'React, Firebase, JavaScript, TailWind'},
+    {title:'Little Lemon', githublink:'https://github.com/Lolaakinrinsola/little-lemon', websiteLink:'#', about:'Little lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment.',tech:'React, HTML, JavaScript, SCSS'},
+    {title:'Metaverse', githublink:'https://github.com/Lolaakinrinsola/metabnb', websiteLink:'https://metabnbzuri.vercel.app', image:'lola-portfolio/src/components/Images/metabnb.png', about:'Metaverse provide you access to luxury and affordable houses in the metaverse',tech:'React, SCSS, JavaScript, HTML'},
+    {title:'Fylo', githublink:'https://github.com/Lolaakinrinsola/fylo-landing-page', websiteLink:'https://lolaakinrinsola.github.io/fylo-landing-page/', about:'A landing page for a company', tech:'React, SCSS, JavaScript, HTML'},
+    {title:'Zuri FIRST', githublink:'#', websiteLink:'https://secondtaskhng.vercel.app', about:'A biodata page for zuri internship and validates form',tech:'React, SCSS, JavaScript, HTML'},
+    {title:'My Portfolio', githublink:'https://github.com/Lolaakinrinsola/lola-portfolio', websiteLink:'https://lola-portfolio.vercel.app/',tech:'React, Chakra-UI, JavaScript, HTML'}
   ]
   return (
     <Project id='project' >
@@ -27,6 +30,9 @@ export const Projects = () => {
             project={websites.title} 
             github={websites.githublink}
             website={websites.websiteLink}
+            image={websites.image}
+            about={websites.about}
+            tech={websites.tech}
             />
           ))}
         </Box>
