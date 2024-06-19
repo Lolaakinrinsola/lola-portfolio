@@ -1,6 +1,6 @@
 import { Heading, Container } from '@chakra-ui/react'
 import React from 'react';
-import resume from "./assets/Akinrinsola's CV.pdf";
+import resume from "./assets/ololade.pdf";
 import { Document ,Page} from 'react-pdf/dist/esm/entry.webpack';
 
 

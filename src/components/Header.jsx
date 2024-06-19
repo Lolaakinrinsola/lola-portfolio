@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Image, Flex, Text,Spacer,ScaleFade, Heading, Link,Button} from "@chakra-ui/react";
 import { MdWavingHand } from 'react-icons/md';
 import logo from './Images/dplogo.png';
-import resume from "./assets/Akinrinsola's CV.pdf";
+import resume from "./assets/ololade.pdf";
 import '../styles/header.css';
 
 export const Header = () => {

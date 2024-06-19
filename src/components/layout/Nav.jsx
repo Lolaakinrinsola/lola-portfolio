@@ -7,7 +7,7 @@ import { Box, Flex, Text,Spacer, HStack,Link,Heading, VStack,useColorMode, Drawe
   DrawerCloseButton} from "@chakra-ui/react";
 import { SunIcon ,MoonIcon,HamburgerIcon} from '@chakra-ui/icons';
 import { useState } from "react";
-import {AiOutlineMail, AiFillTwitterCircle, AiFillGithub,AiFillLinkedin} from 'react-icons/ai';
+import {AiOutlineMail, AiFillGithub,AiFillLinkedin} from 'react-icons/ai';
 import '../../styles/nav.css';
 
 export const Nav = () => {
